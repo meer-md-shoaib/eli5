@@ -7,6 +7,7 @@ import { CursorGlow } from "@/components/ui/CursorGlow";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CreditPopup } from "@/components/layout/CreditPopup";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "ELI5 | Explain Like I'm 5",
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <CreditPopup />
           <Footer />
         </AppProviders>
+        <Analytics />
       </body>
     </html>
   );
